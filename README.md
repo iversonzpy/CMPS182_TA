@@ -11,7 +11,7 @@ Pengyang Zhou
 - Learn Command line, PostgreSQL, File operations, Gradiance.
 ### Command Line
 - Windows/MacOS/Linux - CMD and Terminal
-- Linux on Windows - Vitual Machines, like VMWare, Vitural Box, Linux on Window10.
+- Linux on Windows - Virtual Machines, like VMWare, Virtual Box, Linux on Window10.
 
 - Common Unix/Linux Commands
 http://genomewiki.ucsc.edu/genecats/index.php/UNIX_Commands
@@ -60,6 +60,23 @@ mkdir CMPS182
 cd CMPS182
 vim create.sql
 ```
+Write your database commands in create.sql, for example
+```
+CREATE TABLE products (
+ productID INT PRIMARY KEY,
+ name VARCHAR(80),
+ price DECIMAL(10,2),
+ retailPrice DECIMAL(10,2) 
+ ); 
+```
+What should we do for a primary key with multiple fields? See here: https://www.postgresql.org/docs/9.4/ddl-constraints.html
+
+It is highly recommend adding those lines in the top of your script. Since every time you test your script, it creates a new schema and tables. If those are already existed, PostgreSQL will not execute your commands.
+```
+DROP SCHEMA Lab1 CASCADE;
+CREATE SCHEMA Lab1;
+```
+
 Follow instruction on Piazza -> Resources -> General Resources -> CMPS182_S19_GeneralInformation.pdf
 
 All commands for Lab1 can be found in the above file.
