@@ -2,7 +2,7 @@
 Some preparation for TAing CMPS182
 
 Pengyang Zhou
-- Lab Section: Wednesdays, 4 - 5 PM, BE-105
+- Lab Section: Wednesdays, 4:00 - 5:35 PM, BE-105
 - Office hour: Wednesdays, 6 - 7 PM, BE-119
 
 ## Lab 1
@@ -50,6 +50,19 @@ Run command line from terminal
 ```
 psql -h cmps182-db.lt.ucsc.edu -U 'yourCurzId'
 ```
+##### change password
+ALTER USER 'yourCurzId' WITH PASSWORD 'yourNewPassword';
+
+##### Create your assignment file
+On Unix timeshare, you can create a folder 'CMPS182', then step into CMPS182.
+```
+mkdir CMPS182
+cd CMPS182
+vim create.sql
+```
+Follow instruction on Piazza -> Resources -> General Resources -> CMPS182_S19_GeneralInformation.pdf
+
+All commands for Lab1 can be found in the above file.
 
 ### Gradiance
 Follow the gradiance instruction on CMPS182_S19_GeneralInformation.pdf
