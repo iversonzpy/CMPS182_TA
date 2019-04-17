@@ -86,7 +86,8 @@ Follow the gradiance instruction on CMPS182_S19_GeneralInformation.pdf
 
 
 ## Lab 2
-//TO-DO
+
+See load_data_lab2_v1.sql
 
 ## Lab 3
 //TO-DO
