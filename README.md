@@ -5,6 +5,14 @@ Pengyang Zhou
 - Lab Section: Wednesdays, 4:00 - 5:35 PM, BE-105
 - Office hour: Wednesdays, 6 - 7 PM, BE-119
 
+[Lab1](#lab-1)
+
+[Lab2](#lab-2)
+
+[Lab3](#lab-3)
+
+[Lab4](#lab-4)
+
 ## Lab 1
 ### Goals
 - Read Lab1 instructions (Lab1_S19.pdf) carefully. 
