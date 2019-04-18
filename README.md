@@ -97,6 +97,14 @@ Follow the gradiance instruction on CMPS182_S19_GeneralInformation.pdf
 
 See load_data_lab2_v1.sql
 
+Common questions:
+
+- Change SEARCH_PATH to Lab2. Logout then login. 
+```ALTER ROLE username SET SEARCH_PATH to Lab2;```
+- UNIQUE with composite attributes.
+- Run SELECT queries inside psql.
+
+
 ## Lab 3
 //TO-DO
 
