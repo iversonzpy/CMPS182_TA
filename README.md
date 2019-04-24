@@ -104,13 +104,13 @@ Common questions:
 - UNIQUE with composite attributes.
 - Run SELECT queries inside psql.
 
-- 2019.04.24
-   Q1: \i load_data_lab2.sql drop tables.
-   Q2: DATE '2018-01-16'
-   Q3: self join for a table
-   Q4: GROUP BY not recommend for this lab
-   Q5: SELECT a, b, c FROM table t ORDER BY b desc, c asc.
-   Q6: c for Customers, st for Stores, s for Sales, pr for Products, p for Payments, and d for dayDates. 
+
+-   Q1: \i load_data_lab2.sql drop tables.
+-   Q2: DATE '2018-01-16'
+-   Q3: self join for a table
+-   Q4: GROUP BY not recommend for this lab
+-   Q5: SELECT a, b, c FROM table t ORDER BY b desc, c asc.
+-    Q6: c for Customers, st for Stores, s for Sales, pr for Products, p for Payments, and d for dayDates. 
 
 
 
