@@ -110,14 +110,90 @@ Common questions:
 -   Q3: self join for a table
 -   Q4: GROUP BY not recommend for this lab
 -   Q5: SELECT a, b, c FROM table t ORDER BY b desc, c asc.
--    Q6: c for Customers, st for Stores, s for Sales, pr for Products, p for Payments, and d for dayDates. 
-
-
-
+-   Q6: c for Customers, st for Stores, s for Sales, pr for Products, p for Payments, and d for dayDates. 
+-   Q7:  Day->Days
 
 
 ## Lab 3
-//TO-DO
+
+7 script files need to be submitted.
+
+### combine.sql
+
+- (which should have multiple sql statements in it that are in a single Serializable transaction)
+
+- Lecture 6 6_CMPS182_S19_SQL4.pdf
+
+    START TRANSACTION or BEGIN TRANSACTION (can be implicit)
+
+– Marks the beginning of a transaction, followed by one or more SQL statements.
+
+- following your INSERT or UPDATE scripts.
+
+- Serializable: 
+```
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+```
+
+- Example with table Movie: 
+```
+CREATE TABLE Studio (
+    name CHAR(30), 
+    address VARCHAR(255), 
+    presCNo INT,
+    PRIMARY KEY(name)
+);
+```
+```
+INSERT INTO Studio VALUES('Dreamworks', 'Mountain View, CA 94043', 100);
+
+INSERT INTO Studio VALUES('Fox', '10201 West Pico Blvd. Los Angeles, CA 90064', 101);
+
+INSERT INTO Studio VALUES('Universal', '100 Universal City Plaza, Universal City, CA 91608', 102);
+```
+
+```
+SELECT * FROM Studio;
+              name              |                      address                       | prescno
+--------------------------------+----------------------------------------------------+---------
+ Dreamworks                     | Mountain View, CA 94043                            |     100
+ Fox                            | 10201 West Pico Blvd. Los Angeles, CA 90064        |     101
+ Universal                      | 100 Universal City Plaza, Universal City, CA 91608 |     102
+(3 rows)
+```
+
+```
+DELETE FROM Studio WHERE name IS NOT NULL;
+```
+```
+START TRANSACTION or BEGIN TRANSACTION;
+```
+Then, followed by one or more SQL
+statements.
+
+```
+COMMIT or ROLLBACK;
+```
+
+### foriegn.sql
+```
+ALTER TABLE
+```
+### general.sql
+- In Customers, if lastPaidDate is NULL then status must be ‘L’.
+
+- Question is how to represent 'if p then q' as OR
+
+- NOT p OR q by Truth Table
+
+
+### unittest.sql
+- INSERT or UPDATE
+
+### createview.sql
+```
+CREATE VIEW
+```
 
 ## Lab 4
 //TO-DO
