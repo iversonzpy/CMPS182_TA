@@ -196,4 +196,51 @@ CREATE VIEW
 ```
 
 ## Lab 4
-//TO-DO
+#### Java Environment
+- CLASSPATH
+```
+export CLASSPATH=path_to_folder/postgesql-42.2.5.sql
+echo $CLASSPATH
+```
+
+#### Lab4 Initialization
+- Change search_path
+- Import lab4_create.sql
+- Import lab4_data_loading.sql
+
+#### SQL Queries
+- Read the assignment
+- Write queries for each problem
+- Combine your queries to your java class
+
+#### Use JDBC
+[PostgreSQL JDBC Guideline](https://jdbc.postgresql.org/documentation/head/intro.html)
+
+- For getStoresThatSoldFewProducts(). [Chapter 5. Issuing a Query and Processing the Result](https://jdbc.postgresql.org/documentation/head/query.html)
+- For updateManufacturer. [Performing Updates](https://jdbc.postgresql.org/documentation/head/update.html)
+- For fixCustomerStatus(). [Chapter 6. Calling Stored Functions](https://jdbc.postgresql.org/documentation/head/callproc.html)
+
+
+#### Stored Functions
+As Section 4 mentioned, you should write a stored function called fixStatusFunction that has an integer parameters, lowCustomerID. 
+
+- Declaring Function
+```
+CREATE FUNCTION sales_tax(real) RETURNS real AS $$
+DECLARE
+    subtotal ALIAS FOR $1;
+BEGIN
+    RETURN subtotal * 0.06;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+- LOOP, IF-ELSE, CURSOR (See slides)
+
+- Debug and Print
+```
+DECLARE
+        someVarible INTEGER := 0;
+
+raise notice 'someVarible Value: %', someVarible;
+```
