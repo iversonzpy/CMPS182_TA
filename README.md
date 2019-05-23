@@ -203,6 +203,24 @@ export CLASSPATH=path_to_folder/postgesql-42.2.5.sql
 echo $CLASSPATH
 ```
 
+For UNIX Timeshare, to make CLASSPATH effective parmamently. Create or append export statement to your .bash_profile or .bashrc. Run these commands:
+
+```cd ~
+vi .bash_profile```
+Change to INSERT mode, press i.
+```export CLASSPATH=your_own_path_to_folder/postgesql-42.2.5.jar:.
+```
+Save the file ESC then ```:wq```
+
+```source .bash_profile```
+
+Check your CLASSPATH: ```echo $CLASSPATH```
+
+Exit and Login again to check your CLASSPATH has been changed.
+
+**If .bash_profile doesn't work, replace it with .bashrc**
+
+
 #### Lab4 Initialization
 - Change search_path
 - Import lab4_create.sql
