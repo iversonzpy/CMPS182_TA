@@ -206,9 +206,12 @@ echo $CLASSPATH
 For UNIX Timeshare, to make CLASSPATH effective parmamently. Create or append export statement to your .bash_profile or .bashrc. Run these commands:
 
 ```cd ~
-vi .bash_profile```
-Change to INSERT mode, press i.
-```export CLASSPATH=your_own_path_to_folder/postgesql-42.2.5.jar:.
+vi .bash_profile
+```
+Change to INSERT mode, press i. Write the export export statement to your .bash_profile  file.
+
+```
+export CLASSPATH=your_own_path_to_folder/postgesql-42.2.5.jar:.
 ```
 Save the file ESC then ```:wq```
 
